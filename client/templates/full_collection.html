@@ -1,0 +1,22 @@
+<template name="full_collection">
+
+
+
+
+
+<div class="ui grid stackable container" id="mainContent">
+    <h4 class="ui horizontal header divider">
+        <a href="#">VIEWING THE FULL COLLECTION</a>
+    </h4>
+    {{#each fullList}}
+
+
+        <div class="four wide column">
+            {{>item}}
+        </div>
+
+
+{{/each}}
+    </div>
+
+</template>

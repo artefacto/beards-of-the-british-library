@@ -11,12 +11,14 @@ Meteor.startup(function() {
       title: item.title,
       slug:item.title.replace(/\s/g,'-').substring(0, 50), //crate a slug
       url: item.url,
-      description: item.description,
+      description: item.description || item.identifier,
       order: item.order,
       date: item.date,
       medium: item.medium,
       categoryName: item.categoryName,
-      artist: item.artist
+      artist: item.artist || item.author,
+      place: item.place,
+      shelfmark: item.shelfmark
     });
   }
 }

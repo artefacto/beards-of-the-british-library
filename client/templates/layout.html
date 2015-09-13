@@ -1,8 +1,7 @@
 <template name="layout">
     <head>
-        <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900,900italic,700italic,700,400italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,900italic,900,700italic,700,400italic' rel='stylesheet' type='text/css'>
         <link href="//fonts.googleapis.com/css?family=Calligraffitti&subset=latin" rel="stylesheet" type="text/css">
 
 
@@ -10,29 +9,20 @@
     <body>
 
     {{> header}}
-    <div class="ui left demo vertical visibile inverted sidebar labeled icon menu">
-        <a class="item">
-            <i class="home icon"></i>
-            Home
-        </a>
-        <a class="item">
-            <i class="block layout icon"></i>
-            Topics
-        </a>
-        <a class="item">
-            <i class="smile icon"></i>
-            Friends
-        </a>
-    </div>
+
 
         <!-- Site content !-->
-    <div class="pusher">
-        <h1 class="ui dividing header centered banner">curatorial</h1>
+         <h1 class="ui center aligned icon main header">
+                 <img src="/images/beard-icon-home.png" class="icon medium circular image" />
+                 <div class="content main-header">
+                     Beards <span class="minor">of the</span> British Library
+                 </div>
+        </h1>
+
         <div class="ui container">
 
     {{> yield}}
     </div>
-</div>
     {{> footer}}
 
     </body>

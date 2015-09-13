@@ -1,28 +1,48 @@
 <template name="home">
 
-    <div class="ui container">
+    <div class="ui raised very padded text container segment">
+        <h2 class="ui header">About this collection</h2>
+        <p>View the collection and collect and annotate your own collection</p>
 
-        <div class="ui raised segment"><p>View the collection and collect and annotate your own collection</p></div>
+        <p>View the <a href="{{pathFor 'fullCollection'}}">full collection</a></p>
+    </div>
 
 
-        <div class="ui equal width stackable internally celled grid">
 
-            <div class="center aligned row">
-                <div class="column">
-                    <h3><i class="icon browser"></i> Browse the collection <a href="{{pathFor 'slideshow'}}" class="item">as a slideshow</a>
-                    </h3>
+    <div class="ui raised very padded text container segment center aligned">
 
+        <div class="center aligned row">
+
+
+                    <h2 class="ui icon header">
+                                   <i class="browser icon"></i>
+                    <div class="content">
+                        Slideshow
+                        <div class="sub header">Browse the collection <a href="{{pathFor 'slideshow'}}" class="item">as a slideshow</a></div>
+                    </div>
+                    </h2>
 
                 </div>
-                <div class="column">
-                    <h3><i class="icon tags"></i> Browse the items <a href="{{pathFor 'categories'}}" class="item">by category</a>
-                    </h3>
+        </div>
 
+    <div class="ui raised very padded text container segment center aligned container">
 
-                </div>
+    <div class="center aligned row">
 
-
+                    <h2 class="ui icon header">
+                        <i class="tags icon"></i>
+                        <div class="content">
+                            Categories
+                            <div class="sub header">Browse the collection by <a href="{{pathFor 'categories'}}" class="item">categories</a></div>
+                        </div>
+                    </h2>
             </div>
+                </div>
+
+
+    <div class="ui raised very padded text container center aligned segment">
+
+
             <div class="center aligned row">
                 <div class="column">
                     <h3><i class="icon find"></i> Search the collection by keyword </h3>
@@ -31,19 +51,6 @@
 
             </div>
 
-        </div>
-
-
-        <h4 class="ui horizontal header divider">
-            <a href="#">VIEWING THE FULL COLLECTION</a>
-        </h4>
-
-        <div class="column">
-
-                {{>items}}
-
-
-        </div>
-    </div>
+</div>
 
 </template>
